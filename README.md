@@ -48,3 +48,8 @@ git reset --hard HEAD^ 历史区回滚到上一个版本号
 - git checkout master 将分支切换到master
 - git checkout -b master 如果分支存在则只切换分支，若不存在则创建并切换到master分支，repo start是对git checkout -b这个命令的封装，将所有仓库的分支都切换到master，master是分支名，
 - git checkout --help  查看帮助
+
+## 暂存 文件修改切换分支
+- git stash 把刚才修改的代码进行缓存起来
+> 分支有更改不能直接切换，可以提交更改或者暂存更改,暂存使用过渡期覆盖掉工作区，
+- git stash pop 还原暂存的内容
