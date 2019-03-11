@@ -1,3 +1,17 @@
+## 配置用户(如果不配置用户，需每次手动输入)
+```
+git config --list  查看配置文件
+git config --global user.name '你的名字'
+git config --global user.email '你的邮箱'
+```
+
+## 初始化git
+- 一个项目只能初始化一次，不能进行多层嵌套初始化
+```
+git init 告诉git 哪个文件夹被git 所管理
+git status 查看git状态
+```
+
 ## git的比较（看哪些文件发生了变化）
 - git diff 工作区和暂存区的比较
 - git diff 分支名 工作区和历史区的的对比
@@ -32,6 +46,7 @@ git reset --hard HEAD^ 历史区回滚到上一个版本号
 ## 打印日志
 - git log 打印修改日志
 - git reflog 打印所有日志
+- git log --graph --oneline 显示合并的图谱 并显示在一行
 
 ## 分支的操作
 ### Git branch
@@ -53,3 +68,9 @@ git reset --hard HEAD^ 历史区回滚到上一个版本号
 - git stash 把刚才修改的代码进行缓存起来
 > 分支有更改不能直接切换，可以提交更改或者暂存更改,暂存使用过渡期覆盖掉工作区，
 - git stash pop 还原暂存的内容
+
+
+## echo 输入文件内容
+```
+echo '内容' >> 1.txt 一个大于号表示写入到文件中 两个大于号表示追加内容
+```
