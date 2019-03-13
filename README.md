@@ -74,3 +74,15 @@ git reset --hard HEAD^ 历史区回滚到上一个版本号
 ```
 echo '内容' >> 1.txt 一个大于号表示写入到文件中 两个大于号表示追加内容
 ```
+
+## 隐藏文件
+- .gitignore文件 可以忽略掉你不想提交的文件
+- git 默认不会提交空文件夹所以如果想提交可以在空文件夹里写一个.gitkeep文件 
+
+
+## 关联远程仓库
+```
+git remote add origin 地址
+git remote -v 查看远程信息
+git remote rm 名字    删除关联s
+```
