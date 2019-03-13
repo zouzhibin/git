@@ -84,5 +84,10 @@ echo '内容' >> 1.txt 一个大于号表示写入到文件中 两个大于号�
 ```
 git remote add origin 地址
 git remote -v 查看远程信息
-git remote rm 名字    删除关联s
+git remote rm 名字    删除关联
+```
+
+## 推送代码
+```
+git push origin master
 ```
